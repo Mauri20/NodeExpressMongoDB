@@ -1,0 +1,11 @@
+"bcryptjs": "^2.4.3",============>Sirve para encriptar un dato
+"colors": =======================>Sirve para asignarle colores a los sms de la consola
+"connect-flash": "^0.1.1",=======>Sirve para pasar mensajes entre paginas de la vista
+"express": "^4.17.3",============>Sirve para crear servidores y administrarlos
+"express-handlebars": "^6.0.4",==>Sirve para incluir manejadores de plantillas y poder agregar bucles dentro de html
+"express-session": "^1.17.2",====>Sirve para guardar sesiones luego de una autentificación
+"method-override": "^3.0.0",=====>Sirve para poder reescribir los metodos POST y GET y hacer funcionar los PUT y DELETE
+"mongoose": "^6.2.10",===========>Sirve para poder conectarnos a una base de datos de MongoDB
+"nodemon":=======================>Sirve para recargar el servidor automaticamente al guardar,
+"passport": "^0.5.2",============>Sirve para la autentificación
+"passport-local": "^1.0.0"=======>Sirve para la autentificación
