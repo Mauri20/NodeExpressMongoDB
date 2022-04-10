@@ -10,6 +10,7 @@ const colors = require("colors");
 const methodOverride = require("method-override");
 const session = require("express-session");
 const path = require("path");
+const flash = require("connect-flash");
 //HTTP, DB Server Initializations
 const app = express();
 require("./database");
@@ -37,9 +38,13 @@ app.use(
     saveUninitialized: true,
   })
 );
-
+app.use(flash());
 //Global Vars
-
+app.use((req, res, next) => {
+  res.locals.success_msg = req.flash("success_msg");
+  res.locals.error_msg = req.flash("error_msg");
+  next();
+});
 //Routes
 app.use(require("./routes/index"));
 app.use(require("./routes/users"));
